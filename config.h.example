@@ -1,0 +1,30 @@
+#pragma once
+
+// ----- WiFi -----
+#define WIFI_SSID   "your_wifi_ssid"
+#define WIFI_PASS   "your_wifi_password"
+
+// ----- Adafruit IO -----
+#define AIO_USERNAME "your_adafruit_io_username"
+#define AIO_KEY      "your_adafruit_io_key"
+#define AIO_FEED     "your_feed_name"  // e.g. "mbox"
+
+// ----- Weather (OpenWeatherMap) -----
+#define WEATHER_API_KEY  "your_openweathermap_api_key"
+#define WEATHER_CITY_ID  "5391811"  // replace with your city ID
+
+// ----- RFID UIDs -----
+// Run a UID scanner sketch to find your card/fob UIDs
+byte cardUID[] = {0x00, 0x00, 0x00, 0x00};
+byte fobUID[]  = {0x00, 0x00, 0x00, 0x00};
+
+// ----- Location B (optional: distance display) -----
+// Set to the coordinates of the remote location you want to track distance to
+#define LOC_B_LAT 34.0000
+#define LOC_B_LON -117.0000
+
+// ----- Timezone labels for dual clock -----
+#define CLOCK_LABEL_A  "Location A"
+#define CLOCK_LABEL_B  "Location B"
+#define TIMEZONE_A     "PST8PDT,M3.2.0,M11.1.0"
+#define TIMEZONE_B     "EST5EDT,M3.2.0,M11.1.0"
